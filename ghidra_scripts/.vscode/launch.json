@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Ghidra Debug",
+            "projectName": "ghidra_scripts",
+            "request": "launch",
+            "mainClass": "ghidra.GhidraLauncher",
+            "args": "ghidra.GhidraRun",
+            "shortenCommandLine": "argfile",
+            "vmArgs": "-XX:+IgnoreUnrecognizedVMOptions -XX:+ShowCodeDetailsInExceptionMessages -Djava.system.class.loader=ghidra.GhidraClassLoader -Declipse.project.dir=${workspaceFolder} -Dpython.console.encoding=UTF-8 -Dfile.encoding=UTF8 -Dlog4j.configuration=${env:GHIDRA_INSTALL_DIR}/support/debug.log4j.xml -Dlog4j.skipJansi=true -Duser.country=US -Duser.language=en -Dsun.stdout.encoding=UTF-8 -Dsun.err.encoding=UTF-8 -Dvisualvm.display.name=Ghidra -Dlog4j.configuration=${env:GHIDRA_INSTALL_DIR}/support/debug.log4j.xml -Dghidra.test.property.timeout.disable=true",
+            "console": "internalConsole"
+        }
+    ]
+}
