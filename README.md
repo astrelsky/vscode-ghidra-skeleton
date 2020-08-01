@@ -16,7 +16,8 @@ The following are pre setup directory structures to simplify working with Ghidra
 * Rename directory accordingly.
   * For Extensions/Plugins set the project name in `.project` and in `.vscode/launch.json`. If the names do not match the debugger will fail to launch.
   * For Scripts the `ghidra_script` directory must still be added via Ghidra's Script Manager.
-* Open VSCode in the directory containing the `.project` and `build.gradle` files.
+* Open your terminal in the project directory and execute `gradle wrapper` and then `gradle eclipse`.
+* Open VSCode in the project directory.
 * Let the Java Language Server finish initializing and get to work.
 
 #### Supports
